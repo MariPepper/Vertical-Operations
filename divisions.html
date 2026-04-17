@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Long Division - Clean Method</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f8f9fa;
+      color: #1f2937;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e40af;
+      margin-bottom: 2.5rem;
+      font-size: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #e0e7ff;
+    }
+
+    .quotient-box {
+      background: #eff6ff;
+      border: 2px solid #3b82f6;
+      border-radius: 12px;
+      padding: 12px 20px;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1e40af;
+      margin-bottom: 1rem;
+    }
+
+    .division {
+      font-family: 'Courier New', monospace;
+      font-size: 16px;
+      line-height: 2.15;
+      background: #f1f5f9;
+      padding: 1.6rem;
+      border-radius: 12px;
+      border: 1px solid #cbd5e1;
+      white-space: pre;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Long Division - Clean Method</h1>
+
+  <!-- Example 1 -->
+  <div class="card">
+    <div class="section-title">1. 149 ÷ 128</div>
+    
+    <div class="quotient-box">
+      Quotient = <span style="color:#1e3a8a;">1.1640625</span>
+    </div>
+
+    <div class="division">
+     149 | 128
+    ----------------------------
+     149 |
+    -128 | 128    ← 128 × 1
+    ----------------------------
+      21
+     210 |
+    -128 | 128    ← 128 × 1
+    ----------------------------
+      82
+     820 |
+    -768 | 768    ← 128 × 6
+    ----------------------------
+      52
+     520 |
+    -512 | 512    ← 128 × 4
+    ----------------------------
+       8
+      80 |
+    -  0 |   0    ← 128 × 0
+    ----------------------------
+      80
+     800 |
+    -768 | 768    ← 128 × 6
+    ----------------------------
+      32
+     320 |
+    -256 | 256    ← 128 × 2
+    ----------------------------
+      64
+     640 |
+    -640 | 640    ← 128 × 5
+    ----------------------------
+       0
+    </div>
+  </div>
+
+  <!-- Example 2 -->
+  <div class="card">
+    <div class="section-title">2. 34 ÷ 3</div>
+    
+    <div class="quotient-box">
+      Quotient = <span style="color:#1e3a8a;">11.333...</span> (repeating 3)
+    </div>
+
+    <div class="division">
+      34 | 3
+     ----------------------------
+      34 |
+     -33 | 33    ← 3 × 11
+     ----------------------------
+       1
+      10 |
+     - 9 |  9    ← 3 × 3
+    ----------------------------
+       1
+      10 |
+     - 9 |  9    ← 3 × 3
+    ----------------------------
+       1
+      10 |
+     - 9 |  9    ← 3 × 3
+    ----------------------------
+      ...
+    </div>
+  </div>
+
+  <!-- Example 3 -->
+  <div class="card">
+    <div class="section-title">3. 27 ÷ 2</div>
+    
+    <div class="quotient-box">
+      Quotient = <span style="color:#1e3a8a;">13.5</span>
+    </div>
+
+    <div class="division">
+     27 | 2
+    ----------------------------
+     27 |
+    -26 | 26    ← 2 × 13
+    ----------------------------
+      1
+     10 |
+    -10 | 10    ← 2 × 5
+    ----------------------------
+      0
+    </div>
+  </div>
+
+</body>
+</html>
