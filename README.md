@@ -36,26 +36,26 @@ Correct Example (34 ÷ 3):
     ----------------------------
       ...
 
-Important Rules for the AI:
-Never write the quotient at the top before calculating it.
-Always show the multiplication clearly (← divisor × digit).
-Keep consistent spacing and alignment.
-Use ---------------------------- as the separator line.
-Clearly show the remainder before bringing down the next zero.
-Be consistent with the visual style.
+Important Rules for the AI:  
+Never write the quotient at the top before calculating it.  
+Always show the multiplication clearly (← divisor × digit).  
+Keep consistent spacing and alignment.  
+Use ---------------------------- as the separator line.  
+Clearly show the remainder before bringing down the next zero.  
+Be consistent with the visual style.  
 
-Ready-to-Copy Prompt for Other AIs:
+Ready-to-Copy Prompt for Other AIs:  
 
-Please show the long division using exactly this format:
+Please show the long division using exactly this format:  
 
-      dividend | divisor
+     dividend | divisor
     ----------------------------
      dividend |
         - XXX | YYY    ← divisor × ZZZ
 
-Do not write the quotient at the top in advance.
-Show the calculation step by step, discovering each digit one by one.
-Keep the exact same spacing and line style as in this example:
+Do not write the quotient at the top in advance.  
+Show the calculation step by step, discovering each digit one by one.  
+Keep the exact same spacing and line style as in this example:  
 
       34 | 3
     ----------------------------
